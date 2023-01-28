@@ -97,3 +97,13 @@ body {
     position: relative;
     bottom: -19px;
 }
+#copy {
+    background-color: #eed920;
+    border: none;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 25px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}

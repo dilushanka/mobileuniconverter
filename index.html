@@ -59,13 +59,35 @@
 
 	<br><h3 id="ti"> Unicode </h3> <br>
     <textarea readonly style="font-size: 14pt; font-family: Potha, Malithi Web , Arial Unicode MS; width: 90%;" name="box2" id="box2" rows="5"></textarea>
+	<div>
+		<button id="copy" onclick="triggerExample1()">copy</button>
+	  </div>
 
 	<br><h3 id="ti"> FM Malithi </h3><br>
 	<textarea readonly style="font-size: 14pt; font-family: wijesekara;width: 90%;" id="box3" cols="30" rows="5"></textarea>
-
+	<div>
+		<button id="copy" onclick="triggerExample2()">Copy</button>
+	  </div>
 </div>
 <br>
 <br>
+
+<script>
+function triggerExample1() {
+  const element = document.querySelector('#box2');
+  element.select();
+  element.setSelectionRange(0, 99999);
+  document.execCommand('copy');
+}
+</script>
+<script>
+	function triggerExample2() {
+	  const element = document.querySelector('#box3');
+	  element.select();
+	  element.setSelectionRange(0, 99999);
+	  document.execCommand('copy');
+	}
+	</script>
 
 <div id="facebook">
 
