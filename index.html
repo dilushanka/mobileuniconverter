@@ -56,6 +56,7 @@
   <h3 id="ti">Singlish here</h3>  <br>
 	<textarea placeholder="සිංග්ලිශ් වලින් මෙතන ටයිප් කරන්න" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" onkeyup="startText();" onselect="startText();" onclick="startText();" style="font-size: 12pt;
 							width: 90%;" name="box1" id="box1" rows="5"></textarea>
+	<div><input type="button" value="Clear" onclick="javascript:eraseText();"> </div>						
 
 	<br><h3 id="ti"> Unicode </h3> <br>
     <textarea readonly style="font-size: 14pt; font-family: Potha, Malithi Web , Arial Unicode MS; width: 90%;" name="box2" id="box2" rows="5"></textarea>
@@ -71,7 +72,11 @@
 </div>
 <br>
 <br>
-
+<script>
+	function eraseText() {
+    document.getElementById("box1").value = "";
+}
+</script>
 <script>
 function triggerExample1() {
   const element = document.querySelector('#box2');
